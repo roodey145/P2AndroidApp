@@ -1,0 +1,113 @@
+#home #bottom-section{
+	display: flex;
+	flex-direction: column;
+	height: calc(50% - 1px);
+	border-top: solid 1px black;
+}
+
+#bottom-section h1{
+	text-align: center;
+	font-size: var(--title-font-size);
+}
+
+#bottom-section #milestones{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	overflow: hidden;
+	width: 80%;
+	max-height: 80%;
+	height: 65%;
+	margin-left: 10%;
+	border-radius: 50px;
+	padding: var(--section-default-padding);
+	box-shadow: 0px 0px var(--default-box-blur) 0px black;
+}
+
+#milestones #add-milestone{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 0px 10px;
+	font-size: var(--title-font-size);
+	font-family: cursive;
+}
+
+#milestones #scroll-bar{
+	position: absolute;
+	height: calc(100% - var(--section-default-padding) * 2);
+	width: 10px;
+	margin-left: 10px;
+	left: var(--section-default-padding);
+	top: 50%;
+	transform: translateY(-50%);
+	box-shadow: 0px 4px 4px 0px black;
+	border-radius: var(--default-radius);
+	overflow: hidden;
+}
+
+#scroll-bar #scroller{
+	width: 100%;
+	height: 50%;
+	background-color: var(--main-color);
+	box-shadow: 0px 4px 4px 0px black;
+	border-radius: var(--default-radius);
+}
+
+#milestones-container{
+	padding: 0px 15px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+#milestones-container .milestone{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.milestone .milestone-nr,
+.milestone .milestone-progress{
+	padding: 10px;
+}
+
+.milestone .milestone-nr{
+	margin-right: 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+}
+
+.milestone-progress .milestone-fill p{
+	z-index: 1;
+}
+
+.milestone .milestone-progress{
+	flex:  1 1 auto;
+	text-align: center;
+	border: solid 3px black;
+    border-radius: var(--default-radius) var(--default-radius) 50px var(--default-radius);
+    font-size: 1.5em;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.milestone-progress .milestone-fill{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	top: 0px;
+	left: 0px;
+	background-color: var(--main-color);
+	border-radius: 0px 0px 50px 0px;
+	box-shadow: inset 0px -5px 5px 0px rgb(0 0 0 / 40%);
+	/*z-index: -1;*/
+}

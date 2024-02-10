@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Log in screen</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <h1 class="welcome" align="center">Welcome</h3>
+        <div class="logo img" align="center"><img src="../img/logo.png" alt=""></div>
+        <div class="whole-userpass-container">
+           
+
+        <div class="userpass-container">
+            <label for="uname"><b>Username</b></label><br>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+        </div>
+        <div lass="userpass-container">
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+            </div>
+       
+        <!-- <div class="username">
+            <div class="textIndicator">Username</div>
+            <div class="forgot">Forgot Username?</div>
+        </div>
+        <div class="password">
+            <div class="textIndicator">Password</div>
+            <div class="forgot">Forgot Password?</div>
+        </div> -->
+        <div class="login-buttons-container">
+            <div class="loginButton button" align="center">
+                <div class="loginText" onclick="login()">Login</div>
+            </div>
+            <div class="other-page-buttons-container">
+                <div class="guestButton button">
+                    <div class="guestText" onclick="loginGuest()">Guest</div>
+                </div>
+                <div class="signInButton button">
+                    <div class="signInText" onclick="openSignUpPage()">Sign-Up</div>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script type="text/javascript" src="../js/Login.js"></script>

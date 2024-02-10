@@ -1,0 +1,98 @@
+<div id="home">
+	<div id="top-section" 
+	onpointerdown="pointerDown(event)" 
+	onpointerup="pointerUp()" 
+	onmousedown="pointerDown(event)" 
+	onmouseup="pointerUp()">
+
+	<div id="top-section-sections" style="left: 0vw;">
+		<!-- The slider at the top of the home page -->
+		<div id="daily-progress">
+			<!-- The first slide (progress) -->
+			<div id="progress">
+				<h1>Progress</h1>
+				<section>
+					<!-- TODO: the top and left attr should be
+					     modified using js to fit the parent position -->
+					<div class="blur-background">
+						<!-- The src attr should be added 
+							 automaticly -->
+						<img src="../img/Backgrounds/sunRaise.jpg">
+						<!-- A semi-transparent element that
+						     adds color tone to the 
+						     background image -->
+						<div class="blur-background-front-filter"></div>
+					</div>
+					<!-- The daily progress will be 
+						 automaticlly inserted here -->
+				</section>
+			</div>
+		</div>
+		<div id="saving">
+			<h1>
+				Your saving
+			</h1>
+			<section>
+				
+			</section>
+		</div>
+
+		<div id="daily-quote">
+			<h1>
+				Daily quote
+			</h1>
+			<section>
+				<div class="background-fill">
+					<img src="../img/Backgrounds/workout.jpeg">
+				</div>
+				<p>
+					Strengthen Your Soul And Mind, You 
+					Are The Master Of Your Life - Take Control
+				</p>
+			</section>
+		</div>
+
+	</div>
+	<!-- The pointers at the bottom of the progress 
+	     to show which slider is currently in 
+	     fucos -->
+	<div class="sliders-pointers">
+		<div class="pointer selected">
+			
+		</div>
+		<div class="pointer">
+			
+		</div>
+		<div class="pointer">
+			
+		</div>
+	</div>
+</div>
+
+<!-- The bottom section of the home menu -->
+<div id="bottom-section">
+	<h1>
+		Milestones
+	</h1>
+	<!-- The outer container of the section -->
+	<section id="milestones">
+		<div id="add-milestone">
+			+
+		</div>
+		<div id="scroll-bar">
+			<div id="scroller"></div>
+		</div>
+		<div id="milestones-container">
+			<div class="milestone">
+				<div class="milestone-nr">
+					18
+				</div>
+				<div class="milestone-progress">
+					<div class="milestone-fill"></div>
+					Test 1
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+</div>

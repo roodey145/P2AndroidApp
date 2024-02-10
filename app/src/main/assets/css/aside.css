@@ -1,0 +1,121 @@
+#right-settings-menu{
+	position: absolute;
+	z-index: calc(var(--nav-z-index) + 1);
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	right: 0px;
+	top: 0px;
+	width: 0px;
+	transition: var(--default-transition-time);
+	overflow: hidden;
+}
+
+#right-settings-menu-margin{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: calc(100vw - var(--settings-menu-width));
+}
+
+#right-settings-menu #settings-menu{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	width: var(--settings-menu-width);
+	overflow: hidden;
+}
+
+.blur-transparent-white-background-filter{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(255, 255, 255, 0.95);
+	filter: blur(5px);
+}
+
+#settings-menu-container{
+	width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#settings-menu-header{
+	width: 100%;
+	height: max-content;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#settings-menu-header img{
+	width: var(--settings-menu-icon-size);
+	height: var(--settings-menu-icon-size);
+	border-radius: 100%;
+	overflow: hidden;
+	margin: var(--section-default-padding);
+}
+
+#settings-menu-header #settings-menu-user-info{
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+
+#settings-menu-user-nickname{
+	font-size: 0.9em;
+	color: rgb(120, 120, 120);
+}
+
+/* The settings options */
+.settings-options{
+	width: 100%;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	align-items: center;
+    padding: 10px;
+}
+
+.settings-options .setting-option{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgb(196 196 196 / 40%);
+    border-radius: var(--default-radius);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.setting-option img{
+	height: var(--setting-option-icon-size);
+	/*max-width: var(--setting-option-icon-size);*/
+	padding: 0px 10px;
+}
+
+.mirror-y{
+	transform: rotateY(180deg);
+}
+
+.setting-option h2{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+    font-weight: bold;
+}
+
+#logout{
+	background-color: rgb(189 69 69 / 40%);
+}

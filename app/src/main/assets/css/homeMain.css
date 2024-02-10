@@ -1,0 +1,57 @@
+/* Top layer container */
+#second-layer-container{
+	position: absolute;
+	z-index: 2;
+	background-image: var(--main-background-image);
+	background-size: 100vw 100vh;
+	height: var(--main-height);
+	width: 100vw;
+	top: 0px;
+	left: 0px;
+   display: none;
+}
+
+
+/*Main style*/
+main{
+	top: 0px;
+	left: 0vw;
+	height: var(--main-height);
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100vw;
+	transition: 0.3s;
+}
+
+main .page{
+	min-width: 100vw;
+	max-height: calc(100vh - var(--nav-height));
+}
+
+
+#home{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+#home #top-section{
+	width: 100%;
+	height: calc(50% - 1px);
+	border-bottom: solid 1px black;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* TODO: The width of this element should be 
+   controlled using js to adjust the width 
+   with the number of slides */
+#home #top-section-sections{
+	width: 300vw;
+	transition: all 0.3s ease 0s;
+	display: flex;
+	flex-direction: row;
+}
